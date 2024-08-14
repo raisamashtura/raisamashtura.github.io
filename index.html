@@ -14,144 +14,134 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+
+  <style>
+    body {
+      display: flex;
+    }
+
+    .fixed-column {
+      width: 300px;
+      position: fixed;
+      height: 100%;
+      padding: 20px;
+      background-color: #f8f8f8;
+      overflow-y: auto;
+    }
+
+    .scrollable-content {
+      margin-left: 320px;
+      padding: 20px;
+    }
+
+    .fixed-column img {
+      width: 100%;
+      height: auto;
+    }
+
+    .fixed-column a img {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+  </style>
 </head>
 <body>
 
-<!-- Navigation -->
-<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
+<!-- Fixed Column -->
+<div class="fixed-column">
+  <!-- Main Image -->
+  <img class="img-responsive" src="your-image.JPG" alt="Profile Photo"><br>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#research-publications">Research & Publications</a></li> 
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#resume">Resume</a></li> 
-        <li><a href="#achievements">Achievements</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  <!-- Name and Contact Info -->
+  <div style="font-family: 'Oswald', sans-serif; font-size: 32px;"><b>Raisa Mashtura</b></div><br>
+  <p><b>raisamashtura@gmail.com</b><br>
+  <b>raisa.mashtura@bracu.ac.bd</b></p>
+  <p>Lecturer, Department of Computer Science & Engineering<br>
+  BRAC University<br>
+  Dhaka, Bangladesh<br></p>
 
-<!-- Page Content -->
-<div class="container">
-
-  <div class="row">
-
-    <!-- Entries Column -->
-    <div class="col-md-8">
-      <!-- Main Image -->
-      <img class="img-responsive" src="your-image.JPG" alt="Profile Photo" style="width:228.375px; height:342.375px;"><br>
-      
-      <div style="margin-top:3%; text-align:justify;">                
-        <p>Hello! My name is Raisa Mashtura. I am currently a Lecturer in the Department of Computer Science & Engineering at BRAC University. My research interests focus on Digital Signal Processing, Quantum Machine Learning, and Wireless Communication.</p>
-        
-        <p>I graduated with a Bachelor of Science degree in Electrical and Electronic Engineering from Bangladesh University of Engineering and Technology (BUET), where I specialized in Communication & Signal-Processing with a CGPA of 3.90/4.00, belonging to the top 7.5% of my class.</p>
-        
-        <p>During my undergraduate studies, I developed a strong foundation in both theoretical and applied aspects of my field. My thesis involved designing a Quantum Convolutional Neural Network (QCNN) for the classification of classical data, a project that exemplifies my passion for combining quantum computing with machine learning to address complex real-world challenges.</p>
-
-          
-      </div>
-    </div> 
-
-    <!-- Contact Info on the Sidebar -->
-    <div class="col-md-4">
-      <div style="font-family: 'Oswald', sans-serif; font-size: 32px;"><b>Raisa Mashtura</b></div><br>
-      <p><b>raisamashtura@gmail.com</b><br>
-      <b>raisa.mashtura@bracu.ac.bd</b></p>
-      <p>Lecturer, Department of Computer Science & Engineering<br>
-      BRAC University<br>
-      Dhaka, Bangladesh<br>
-      </p>
-    </div>
-    
-    <!-- Links on the Sidebar -->
-<div class="col-md-4" style="margin-top:2%">
+  <!-- Links -->
   <dd>
     <a href="https://www.linkedin.com/in/raisa-mashtura" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width:20px; height:20px; vertical-align:middle; margin-right:5px;">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
       LinkedIn
     </a>
   </dd> 
   <dd>
     <a href="https://scholar.google.com/citations?user=qDG3vBUAAAAJ&hl=en" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google Scholar" style="width:20px; height:20px; vertical-align:middle; margin-right:5px;">
+      <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google Scholar">
       Google Scholar
     </a>
   </dd>
 </div>
 
-    <!-- Research & Publications Section -->
-    <div class="col-md-8" style="margin-top:50px;">    
-      <h2 id="research-publications">Research & Publications</h2>
+<!-- Scrollable Content -->
+<div class="scrollable-content">
 
-      <!-- Publications Subsection -->
-      <h3 id="publications">Publications</h3>
-      <ul>
-        <li><a href="https://doi.org/10.1109/TENCON58879.2023.10322543">A Parallel Quantum Feature Encoding Scheme for Effective Classical Data Classification in Quantum Convolutional Neural Networks</a> - R. Mashtura, J. Mahmud, S. A. Fattah, M. Saquib, TENCON 2023</li>
-        <li><a href="https://doi.org/10.1007/s42484-024-00145-4">Quantum Convolutional Neural Networks with Interaction Layers for Classification of Classical Data</a> - Mahmud, J., Mashtura, R., Fattah, S.A. et al., Quantum Machine Intelligence 6, 11 (2024)</li>
-      </ul>
+  <!-- Research & Publications Section -->
+  <div class="col-md-8">    
+    <h2 id="research-publications">Research & Publications</h2>
 
-      <!-- Undergraduate Thesis Subsection -->
-      <h3 id="undergraduate-thesis">Undergraduate Thesis</h3>
-      <p><b>Designing a Quantum Convolutional Neural Network with Novel Entanglement Layers for the Classification of Classical Data</b><br>
-      <i>Supervisor:</i> Dr. Shaikh Anowarul Fattah <br>
-      April 2022 - May 2023</p>
-      <p>We designed and benchmarked a highly entangled Quantum Convolutional Neural Network (QCNN) and tested its performance on benchmarked datasets for binary and multiclass classification, giving state-of-the-art results. The QCNN model is optimized such that it can be deployed using a feasible number of qubits in NISQ (Noisy Intermediate Scale Quantum) devices. Further studies were also conducted on the model devised as well as other QCNN models.</p>
+    <!-- Publications Subsection -->
+    <h3 id="publications">Publications</h3>
+    <ul>
+      <li><a href="https://doi.org/10.1109/TENCON58879.2023.10322543">A Parallel Quantum Feature Encoding Scheme for Effective Classical Data Classification in Quantum Convolutional Neural Networks</a> - R. Mashtura, J. Mahmud, S. A. Fattah, M. Saquib, TENCON 2023</li>
+      <li><a href="https://doi.org/10.1007/s42484-024-00145-4">Quantum Convolutional Neural Networks with Interaction Layers for Classification of Classical Data</a> - Mahmud, J., Mashtura, R., Fattah, S.A. et al., Quantum Machine Intelligence 6, 11 (2024)</li>
+    </ul>
 
-      <!-- Current Work Subsection -->
-      <h3 id="current-work">Current Work</h3>
-      <p><b>Colon cancer survival prediction from whole slide images and genomics data using multimodal learning of a hybrid quantum-classical deep learning network</b><br>
-      <i>Supervisor:</i> Dr. Shaikh Anowarul Fattah <br>
-      March 2024 - Present</p>
-      <p>We designed a hybrid Quantum-Classical Neural Network (QCNN) to extract histopathological features and tissue area features from whole slide images of the TCGA-COAD dataset. These features were then combined with their corresponding genomic data and fed into existing state-of-the-art survival models.</p>
-    </div>
+    <!-- Undergraduate Thesis Subsection -->
+    <h3 id="undergraduate-thesis">Undergraduate Thesis</h3>
+    <p><b>Designing a Quantum Convolutional Neural Network with Novel Entanglement Layers for the Classification of Classical Data</b><br>
+    <i>Supervisor:</i> Dr. Shaikh Anowarul Fattah <br>
+    April 2022 - May 2023</p>
+    <p>We designed and benchmarked a highly entangled Quantum Convolutional Neural Network (QCNN) and tested its performance on benchmarked datasets for binary and multiclass classification, giving state-of-the-art results. The QCNN model is optimized such that it can be deployed using a feasible number of qubits in NISQ (Noisy Intermediate Scale Quantum) devices. Further studies were also conducted on the model devised as well as other QCNN models.</p>
 
-    <!-- Projects Section -->
-    <div class="col-md-8" style="margin-top:50px;">    
-      <h2 id="projects">Projects</h2>
-      
-      <ul>
-        <li><b>Gas Leak Detection & Explosion Prevention with Air Quality Monitoring System</b><br>
-        Designed an ultimate engineering solution against gas leak explosions by detecting gas leaks and taking preventive measures such as limiting them and alerting the user via a mobile phone call. Air quality measurements were also taken.</li><br>
+    <!-- Current Work Subsection -->
+    <h3 id="current-work">Current Work</h3>
+    <p><b>Colon cancer survival prediction from whole slide images and genomics data using multimodal learning of a hybrid quantum-classical deep learning network</b><br>
+    <i>Supervisor:</i> Dr. Shaikh Anowarul Fattah <br>
+    March 2024 - Present</p>
+    <p>We designed a hybrid Quantum-Classical Neural Network (QCNN) to extract histopathological features and tissue area features from whole slide images of the TCGA-COAD dataset. These features were then combined with their corresponding genomic data and fed into existing state-of-the-art survival models.</p>
+  </div>
 
-        <li><b>Aquatic Multi-purpose Robot for Water Surface Trash Cleaning and Water Quality Monitoring</b><br>
-        Designed a cost-effective robot to detect and collect trash on water surfaces, both by automated and manual control. It also had sensors to detect water quality such as pH and temperature.</li><br>
-
-        <li><b>Design of a 4-bit Calculator</b><br>
-        Designed separate circuit blocks for performing operations: encoding, enabling, addition, subtraction, multiplication, division, and decoding. These blocks were integrated to obtain a fully functional calculator.</li><br>
-
-        <li><b>COVID-19 Forecasting in Bangladesh</b><br>
-        Time series prediction of the number of COVID-19 cases in Bangladesh using Fbprophet, LSTM, and MLP models.</li><br>
-
-        <li><b>Intelligent Gesture Based Security System</b><br>
-        Designed a contactless security system that is unlocked by means of a stored hand gesture pattern. The simulation was performed using MATLAB, VSPE, Arduino, and Proteus.</li><br>
-
-        <li><b>Electronic Analog Computer Solving a Second Order Differential Equation</b><br>
-        Designed an electronic circuit using Pspice and op-amps that electrically solves any second-order differential equation.</li><br>
-
-        <li><b>Transformers: Voltage Regulation and Efficiency</b><br>
-        Parameters of a three-phase or single-phase transformer were obtained using GUI, and plots of voltage regulation, efficiency against load, and the equivalent circuit were displayed on the GUI window. Simulation was carried out using MATLAB.</li><br>
-
-        <li><b>Design of a Two-unit Multi-storied Building using Autocad</b><br>
-        Planned and designed a layout and electrical connection of a six-storied building.</li><br>
-
-        <li><b>Investigating the Effect of HVDC Connection and Large Industrial Loads in IEEE-39 Bus Network</b><br>
-        Investigated various types of faults occurring on different loading conditions in a multi-bus power system using PSAF.</li><br>
-      </ul>
-    </div>
+  <!-- Projects Section -->
+  <div class="col-md-8">    
+    <h2 id="projects">Projects</h2>
     
+    <ul>
+      <li><b>Gas Leak Detection & Explosion Prevention with Air Quality Monitoring System</b><br>
+      Designed an ultimate engineering solution against gas leak explosions by detecting gas leaks and taking preventive measures such as limiting them and alerting the user via a mobile phone call. Air quality measurements were also taken.</li><br>
+
+      <li><b>Aquatic Multi-purpose Robot for Water Surface Trash Cleaning and Water Quality Monitoring</b><br>
+      Designed a cost-effective robot to detect and collect trash on water surfaces, both by automated and manual control. It also had sensors to detect water quality such as pH and temperature.</li><br>
+
+      <li><b>Design of a 4-bit Calculator</b><br>
+      Designed separate circuit blocks for performing operations: encoding, enabling, addition, subtraction, multiplication, division, and decoding. These blocks were integrated to obtain a fully functional calculator.</li><br>
+
+      <li><b>COVID-19 Forecasting in Bangladesh</b><br>
+      Time series prediction of the number of COVID-19 cases in Bangladesh using Fbprophet, LSTM, and MLP models.</li><br>
+
+      <li><b>Intelligent Gesture Based Security System</b><br>
+      Designed a contactless security system that is unlocked by means of a stored hand gesture pattern. The simulation was performed using MATLAB, VSPE, Arduino, and Proteus.</li><br>
+
+      <li><b>Electronic Analog Computer Solving a Second Order Differential Equation</b><br>
+      Designed an electronic circuit using Pspice and op-amps that electrically solves any second-order differential equation.</li><br>
+
+      <li><b>Transformers: Voltage Regulation and Efficiency</b><br>
+      Parameters of a three-phase or single-phase transformer were obtained using GUI, and plots of voltage regulation, efficiency against load, and the equivalent circuit were displayed on the GUI window. Simulation was carried out using MATLAB.</li><br>
+
+      <li><b>Design of a Two-unit Multi-storied Building using Autocad</b><br>
+      Planned and designed a layout and electrical connection of a six-storied building.</li><br>
+
+      <li><b>Investigating the Effect of HVDC Connection and Large Industrial Loads in IEEE-39 Bus Network</b><br>
+      Investigated various types of faults occurring on different loading conditions in a multi-bus power system using PSAF.</li><br>
+    </ul>
+  </div>
+  
 <!-- Resume Section -->
-<div class="col-md-8" style="margin-top:50px;">    
+<div class="col-md-8">    
   <h2 id="resume">Resume</h2>
   
   <!-- Education Subsection -->
@@ -196,7 +186,7 @@
 </div>
 
 <!-- Achievements Section -->
-<div class="col-md-8" style="margin-top:50px;">    
+<div class="col-md-8">    
   <h2 id="achievements">Achievements</h2>
   
   <!-- Academic Awards Subsection -->
@@ -230,13 +220,7 @@
   </ul>
 </div>
 
-  </div>
 </div>
 
 </body>
 </html>
-
-
-</body>
-</html>
-
